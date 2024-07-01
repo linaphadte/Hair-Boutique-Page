@@ -47,6 +47,6 @@ cd hair-day
 
 
 ## Screenshots
-
-![App Screenshot](https://github.com/linaphadte/Hair-Boutique-Page/blob/master/HD-landingpage1)
+<img src="https://github.com/linaphadte/Hair-Boutique-Page/blob/master/HD-landingpage1.png">
+<img src="https://github.com/linaphadte/Hair-Boutique-Page/blob/master/HD-landingpage2.png">
 
