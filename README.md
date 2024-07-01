@@ -1,10 +1,6 @@
-# Hair Day Website
+# <img src="https://github.com/linaphadte/Hair-Boutique-Page/blob/master/logo.png" width="100" height="70"> Hair Day Website
 
 Welcome to Hair Day, your go-to destination for premium hair care services!
-
-
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
 ## Table of Contents
@@ -12,9 +8,9 @@ Welcome to Hair Day, your go-to destination for premium hair care services!
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Color Reference](#color-reference)
+- [Screenshots](#screenshots)
+
 ## Introduction
 
 Hair Day is a website designed for a hair salon business, offering a variety of services including haircuts, hair coloring, and hairstyling. This repository contains the source code for the website, developed using HTML, CSS, and JavaScript.
@@ -38,7 +34,9 @@ git clone https://github.com/your-username/hair-day.git
 ```bash   
 cd hair-day
 ```
-3. Open the index.html file in your web browser.## Color Reference
+3. Open the index.html file in your web browser.
+
+## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -50,5 +48,5 @@ cd hair-day
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/linaphadte/Hair-Boutique-Page/blob/master/HD-landingpage1)
 
