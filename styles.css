@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+header > img {
+    width: 30%;
+    height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list li a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.nav-list li a:hover {
+    color: rgb(248, 96, 76);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer div img {
+    width: 20%; /* Adjust the percentage as needed */
+    height: auto;
+    margin: 0;
+}
+
+footer div p {
+    text-align: right;
+    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(124, 113, 99);
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.video-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem; /* Adding border-radius for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+}
+
+.content {
+    flex: 1 1 40rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(248, 96, 76); /* Adding color for better visibility */
+}
+
+.content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 5rem;
+    background-color: rgb(248, 96, 76);
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: rgb(124, 113, 99);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.8rem;
+    width: calc(33.333% - 1.6rem);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    background-color: black;
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 0.8rem;
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0.5rem 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    header > img {
+        width: 50%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background-color: black;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list li a {
+        padding: 1rem;
+        width: 100%;
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    footer div img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header > img {
+        width: 70%;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    footer div img {
+        width: 50%;
+    }
+}
